@@ -1,0 +1,19 @@
+{
+  "name": "webgl2-quickstart",
+  "version": "1.0.0",
+  "description": "webgl2 demo hosted on webserver",
+  "main": "main.js",
+  "scripts": {
+    "start": "webpack --config webpack.config.js && node main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "webgl2"
+  ],
+  "devDependencies": {
+    "standard": "10.0.2",
+    "webpack": "2.4.1"
+  },
+  "author": "David Young",
+  "license": "MIT"
+}
