@@ -2,6 +2,7 @@
   "name": "webgl2-quickstart",
   "version": "1.0.0",
   "description": "webgl2 demo hosted on webserver",
+  "homepage": "https://github.com/tgsstdio/webgl2-quickstart",
   "main": "main.js",
   "scripts": {
     "start": "webpack --config webpack.config.js && node main.js",
