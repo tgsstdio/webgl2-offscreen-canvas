@@ -1,13 +1,44 @@
- <html>
+<!DOCTYPE html>
+<html lang="en">
    <head>
-     <title>WEBGL2 Quickstart</title>
+     <title>WEBGL2 Offscreen rendering </title>
    </head>
-   <body>
-    <h1>WEBGL2 Quickstart</h1>
-    <div id='messageLog' > </div>    
-    <canvas id="glCanvas" width="640" height="480">
-      Your browser doesn't appear to support the <code>&lt;canvas&gt;</code> element.
-    </canvas>
+   <body>    
+    <h1>WEBGL2 Offscreen rendering </h1> 
+    <div>
+        <h2> Browser / extensions </h2>
+        <p>WebGL2 extension browser status: <strong><span id='messageLog'> </span></strong></p>
+        <p>You can check if the browser has offscreen canvas with following .js code</p>
+        <code>
+            var canvas = document.getElementById( ... )<br/>
+            var gl = offscreen.getContext('webgl2')<br/>
+            var isFound = ('transferControlToOffscreen' in gl)<br/>
+        </code>   
+    </div>
+    <div>
+        <h2> Steps </h2>
+        <ol> 
+            <li> Open this page on Mozilla firefox </li>
+            <li> Enter about:config into the address bar</li>
+            <li> look for "gfx.offscreencanvas.enabled" and toggle to "true" </li>
+        </ol>
+    </div>    
+    <div>
+        <h2> To enabled OffScreen Canvas rendering </h2>
+        <input id="checkBox" type='checkbox' checked='true' > ENABLED </input>
+    </div>
+    <div id="normalRendering">
+        <h2>Normal rendering </h2>
+        <canvas id="onCanvas" width="640" height="480">
+        Your browser doesn't appear to support the <code>&lt;canvas&gt;</code> element.
+        </canvas>
+    </div>
+    <div id="offScreenRendering">
+        <h2>Offscreen rendering </h2>
+        <canvas id="offCanvas" width="640" height="480">
+        Your browser doesn't appear to support the <code>&lt;canvas&gt;</code> element.
+        </canvas>
+    </div>
     <script id="vs" type="x-shader/x-vertex">
         #version 300 es
         #define POSITION_LOCATION 0
@@ -34,8 +65,7 @@
         {
             color = v_color;
         }
-    </script>    
-  
-    <script src='dist/bundle.js'></script>
+    </script>
+    <script src='dist/bundle.js'></script>       
    </body>
  </html>

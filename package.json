@@ -1,8 +1,8 @@
 {
-  "name": "webgl2-quickstart",
+  "name": "webgl2-offscreen-canvas",
   "version": "1.0.0",
-  "description": "webgl2 demo hosted on webserver",
-  "homepage": "https://github.com/tgsstdio/webgl2-quickstart",
+  "description": "webgl2 demo for offscreen-canvas hosted on webserver",
+  "homepage": "",
   "main": "main.js",
   "scripts": {
     "start": "webpack --config webpack.config.js && node main.js",
