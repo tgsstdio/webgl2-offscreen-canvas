@@ -2,7 +2,7 @@
   "name": "webgl2-offscreen-canvas",
   "version": "1.0.0",
   "description": "webgl2 demo for offscreen-canvas hosted on webserver",
-  "homepage": "",
+  "homepage": "https://github.com/tgsstdio/webgl2-offscreen-canvas",
   "main": "main.js",
   "scripts": {
     "start": "webpack --config webpack.config.js && node main.js",

@@ -1,6 +1,6 @@
-# WEBGL2 Quickstart 
+# webgl2-offscreen-canvas
 
-webgl2 demo hosted on webserver
+webgl2 demo hosted on webserver with OffscreenCanvas
 
 ## Uses 
  - Webpack 2.4.1
